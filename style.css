@@ -1,0 +1,45 @@
+@import url(./fonts.css);
+@import url(./vendor/normalize.css);
+
+.page {
+  background-color: rgb(203, 251, 248);
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid teal;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__title {
+  margin: 0;
+  font-weight: 700;
+}
+.container__text-area {
+}
+.container__span {
+}
+.container__paragraph {
+  font-weight: 600;
+}
+.container__form {
+}
+.container__form-imput {
+}
+.container__btm-rst {
+}
+
+.container__buttoms {
+}
+.container__btm-sbmt {
+}
