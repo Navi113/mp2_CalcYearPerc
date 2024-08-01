@@ -2,6 +2,7 @@
 @import url(./vendor/normalize.css);
 
 .page {
+  width: 100%;
   height: 100vh;
   background-image: linear-gradient(#fad4a2, #324b6f);
   font-family: 'Montserrat', 'Helvetica', 'Aerial', sans-serif;
