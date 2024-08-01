@@ -2,44 +2,92 @@
 @import url(./vendor/normalize.css);
 
 .page {
-  background-color: rgb(203, 251, 248);
-  width: 100%;
   height: 100vh;
-  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
+  background-image: linear-gradient(#fad4a2, #324b6f);
+  font-family: 'Montserrat', 'Helvetica', 'Aerial', sans-serif;
+  position: relative;
 }
 
 .container {
+  position: absolute;
   width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 3px solid teal;
+  height: 400px;
+  background-color: #FF9A2E;
   border-radius: 20px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container__title {
-  margin: 0;
+  font-size: 40px;
   font-weight: 700;
-}
-.container__text-area {
-}
-.container__span {
-}
-.container__paragraph {
-  font-weight: 600;
-}
-.container__form {
-}
-.container__form-imput {
-}
-.container__btm-rst {
+  line-height: 46px;
+  margin: 0;
 }
 
-.container__buttoms {
+.container__text-area {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  margin: 0 0 auto 0;
 }
-.container__btm-sbmt {
+
+.container__paragraph {
+  margin: 0;
+}
+
+.container__form {
+  display: flex;
+  align-content: center;
+}
+
+.container__form-input {
+  height: 60px;
+  padding: 0 0 0 20px;
+  border:4px solid #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border .2s linear;
+  outline: none;
+}
+
+.container__form-input:hover {
+  border: 4px solid #16C571;
+}
+
+.container__form-input:focus {
+  border: 4px solid #1fa9d3;
+}
+
+.container__form-input_type_amnt {
+  width: 200px;
+  margin: 0 20px 0 0;
+}
+
+.container__form-input_type_perc {
+  width: 60px;
+  margin: 0 auto 0 0;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #16C571;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .2s linear;
+}
+
+.btn:hover {
+  background-color: #1fa9d3;
+
 }
