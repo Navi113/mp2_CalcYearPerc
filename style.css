@@ -36,10 +36,17 @@
   font-weight: 700;
   line-height: 23px;
   margin: 0 0 auto 0;
+  padding: 20px 0 0 0;
 }
 
 .container__paragraph {
-  margin: 0;
+  margin: 0 0 20px 0;
+}
+
+.container__span {
+  display: block;
+  font-size: 60px;
+  margin: 40px 0 0 0;
 }
 
 .container__form {
@@ -48,9 +55,11 @@
 }
 
 .container__form-input {
+  font-size: 20px;
+  font-weight: 600;
   height: 60px;
   padding: 0 0 0 20px;
-  border:4px solid #fff;
+  border: 4px solid #fff;
   border-radius: 10px;
   box-sizing: border-box;
   transition: border .2s linear;
@@ -63,6 +72,10 @@
 
 .container__form-input:focus {
   border: 4px solid #1fa9d3;
+}
+
+.container__form-input::placeholder {
+  font-weight: 700;
 }
 
 .container__form-input_type_amnt {
@@ -91,4 +104,3 @@
 .btn:hover {
   background-color: #1fa9d3;
 }
-
