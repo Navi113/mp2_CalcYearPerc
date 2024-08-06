@@ -7,14 +7,14 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./vendor/fonts/Montserrat-bold.ttf'); 
+  src: url('./vendor/fonts/Montserrat-semiBold.ttf'); 
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./vendor/fonts/Montserrat-semiBold.ttf'); 
+  src: url('./vendor/fonts/Montserrat-bold.ttf'); 
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
 }

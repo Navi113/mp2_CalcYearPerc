@@ -6,13 +6,13 @@ const btn = document.querySelector('.btn');
 
 // Функция показывает ошибку
 function showBadRes() {
-  textArea.innerHTML = '<p class="container__paragraph">Ошибочка вышла! Что-то введено неправильно, попробуйте еще разик</p><span class="container__span">🫠</span>';
+  textArea.innerHTML = '<p class="container__paragraph">Ошибочка вышла! Что-то введено неправильно, попробуйте еще разик</p><span class="container__smile">🫠</span>';
   btn.style.backgroundColor = '#eb520b';
 }
 
 // Функция показывает верный результат
 function showGoodRes(day, month, year) {
-  textArea.innerHTML = `<p class="container__paragraph">С вкладом в ${inputAmnt.value} руб. и ${inputPerc.value}% вы получите:</p><p class="container__paragraph">в день: ${day} руб.</p><p>в месяц: ${month} руб.</p><p class="container__paragraph">в год: ${year} руб.</p><span class="container__span">😊</span>`;
+  textArea.innerHTML = `<p class="container__paragraph">С вкладом в <span class="container__span">${inputAmnt.value} руб.</span> и <span class="container__span">${inputPerc.value}%</span> вы получите:</p><p class="container__paragraph">в день: <span class="container__span">${day} руб.</span></p><p>в месяц: <span class="container__span">${month} руб.</span></p><p class="container__paragraph">в год: <span class="container__span">${year} руб.</span></p><span class="container__smile">😊</span>`;
   btn.style.backgroundColor = '#efa2ef';
 }
 
