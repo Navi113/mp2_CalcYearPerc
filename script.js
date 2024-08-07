@@ -13,7 +13,8 @@ function showBadRes() {
 // Функция показывает верный результат
 function showGoodRes(day, month, year) {
   textArea.innerHTML = `<p class="container__paragraph">С вкладом в <span class="container__span">${inputAmnt.value} руб.</span> и <span class="container__span">${inputPerc.value}%</span> вы получите:</p><p class="container__paragraph">в день: <span class="container__span">${day} руб.</span></p><p>в месяц: <span class="container__span">${month} руб.</span></p><p class="container__paragraph">в год: <span class="container__span">${year} руб.</span></p><span class="container__smile">😊</span>`;
-  btn.style.backgroundColor = '#efa2ef';
+  btn.style.backgroundColor = '#16C571';
+
 }
 
 // Функция расчета процентов
@@ -57,5 +58,3 @@ function getRes(evt) {
 
 // Слушатель на форму
 form.addEventListener('submit', getRes)
-
-console.log(inputAmnt.textContent);
