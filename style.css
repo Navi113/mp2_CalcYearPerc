@@ -2,11 +2,6 @@
 @import url(./vendor/normalize.css);
 
 .page {
-  /* width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(#fad4a2, #324b6f);
-  font-family: 'Montserrat', 'Helvetica', 'Aerial', sans-serif;
-  position: relative; */
   width: 100%;
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fad4a2), to(#324b6f));
@@ -23,13 +18,21 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #FF9A2E;
   border-radius: 20px;
   margin: auto;
   padding: 10px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -47,6 +50,8 @@
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: ackground-color .2s linear;
+  -o-transition: ackground-color .2s linear;
   transition: ackground-color .2s linear;
 }
 
@@ -81,7 +86,10 @@
 }
 
 .container__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -92,7 +100,10 @@
   padding: 0 0 0 20px;
   border: 4px solid #fff;
   border-radius: 10px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: border .2s linear;
+  -o-transition: border .2s linear;
   transition: border .2s linear;
   outline: none;
 }
@@ -103,6 +114,22 @@
 
 .container__form-input:focus {
   border: 4px solid #1fa9d3;
+}
+
+.container__form-input::-webkit-input-placeholder {
+  font-weight: 700;
+}
+
+.container__form-input::-moz-placeholder {
+  font-weight: 700;
+}
+
+.container__form-input:-ms-input-placeholder {
+  font-weight: 700;
+}
+
+.container__form-input::-ms-input-placeholder {
+  font-weight: 700;
 }
 
 .container__form-input::placeholder {
@@ -126,9 +153,17 @@
   border-radius: 50%;
   background-color: rgba(255, 255, 255, .4);
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
 
@@ -139,7 +174,7 @@
 @media screen and (max-width: 470px) {
   .container__title {
     font-size: 30px;
-    margin:  0 0 10px 0;
+    margin: 0 0 10px 0;
   }
 
   .container__text-area {
