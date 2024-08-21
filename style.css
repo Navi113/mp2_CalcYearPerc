@@ -26,6 +26,11 @@
   box-sizing: border-box;
 }
 
+.container__title-link {
+  text-decoration: none;
+  color: #000;
+}
+
 .container__title {
   font-size: 40px;
   line-height: 1.25;
