@@ -2,8 +2,8 @@
 @import url(./vendor/normalize.css);
 
 .page {
-  width: 100%;
-  height: 100vh;
+  \*width: 100%;*\
+  \*height: 100vh;*\
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fad4a2), to(#324b6f));
   background-image: -o-linear-gradient(#fad4a2, #324b6f);
   background-image: linear-gradient(#fad4a2, #324b6f);
