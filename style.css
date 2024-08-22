@@ -2,36 +2,30 @@
 @import url(./vendor/normalize.css);
 
 .page {
-  /* width: auto;
-  max-width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fad4a2), to(#324b6f));
   background-image: -o-linear-gradient(#fad4a2, #324b6f);
-  background-image: linear-gradient(#fad4a2, #324b6f); */
-  background-image: url(./images/bg.png);
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(#fad4a2, #324b6f);
   font-family: 'Montserrat', 'Helvetica', 'Aerial', sans-serif;
-  border: 10px solid teal;
-}
-
-.root {
-  /* position: relative; */
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  border: 10px solid red;
 }
 
 .container {
   width: 90%;
   max-width: 600px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +35,6 @@
   flex-direction: column;
   background-color: #FF9A2E;
   border-radius: 20px;
-  /* margin: auto; */
   padding: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -111,6 +104,7 @@
   padding: 0 0 0 20px;
   border: 4px solid #fff;
   border-radius: 10px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: border .2s linear;
   -o-transition: border .2s linear;
@@ -166,6 +160,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
