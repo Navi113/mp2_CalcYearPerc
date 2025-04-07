@@ -20,7 +20,7 @@ function showGoodRes(day, month, year) {
 // Функция расчета процентов
 function calcPers(Amnt, Perc) {
   let day = Amnt * Perc / 365 / 100;
-  let month = Amnt * Perc / 31 / 100;
+  let month = Amnt * Perc / 12 / 100;
   let year = Amnt * Perc / 1 / 100;
 
   return {
